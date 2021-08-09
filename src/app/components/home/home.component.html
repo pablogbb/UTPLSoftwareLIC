@@ -1,0 +1,29 @@
+<div class="row" style="height: 54px; background-color: #8A1D8C;color: white;">
+    <div class="col-12 my-auto">
+        <div class="row" style="position: relative;">
+            <div (click)="toggle=!toggle" style="position: absolute; top: 15px; left: 30px;">
+                <i class="fas fa-bars" ></i>
+            </div>  
+            <div class="col-auto mx-auto">                
+                <h1>Software LIC.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pmenu" [ngClass]="{'pmenu-active': toggle,'pmenu-inactive':!toggle}">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-auto"  (click)="toggle=false">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item" (click)="cerrarSesion()">Cerrar Sesión</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

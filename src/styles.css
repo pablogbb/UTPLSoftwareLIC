@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html,body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-primary{
+    background-color: #d7d7d7;
+    color: black;
+    border: #8A1D8C;
+}
+
+.btn-secondary{
+    background-color: #8A1D8C;
+    color: white;
+    border: #8A1D8C;
+}
+
+.text-title{
+    color: #8A1D8C;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}

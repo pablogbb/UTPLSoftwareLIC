@@ -1,0 +1,39 @@
+
+<div class="row px-2 my-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-title">{{licencia.nombre}}</h1>
+                    </div>
+                    <div class="col-12">
+                        {{licencia.subtitulo}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row px-4 mt-3 m-4">
+    <div class="col-12">
+        <p>{{licencia.descripcion}}</p>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <a target="blank" [href]="licencia.web" class="btn btn-secondary">WEB</a>
+    </div>
+</div>
+<div class="row px-3 my-4">
+    <div class="col-12">
+        <h3 class="text-title">Enlaces</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ul class="list-group">
+            <li class="list-group-item"><a [routerLink]="['/home/aplicacion']">An item</a></li>
+          </ul>
+    </div>
+</div>

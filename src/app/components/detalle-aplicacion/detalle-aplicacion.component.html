@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-12 text-center my-3">
+        <img src="https://logos-marcas.com/wp-content/uploads/2020/11/Adobe-Photoshop-Logotipo-2019-2020.jpg" alt="" height="50px">
+    </div>
+</div>
+<div class="row justify-content-between px-3">
+    <div class="col-auto">
+        <h1>{{app.nombre}}</h1>
+    </div>
+    <div class="col-auto">
+        <h2>{{app.anio}}</h2>
+    </div>
+</div>
+<div class="row px-4 mt-3">
+    <div class="col-12">
+        <p>{{app.descripcion}}</p>
+    </div>
+</div>
+<div class="row px-3">
+    <div class="col-12">
+        <h2>Licencia</h2>
+    </div>
+</div>
+<div class="row px-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-title">{{app.licencia.nombre}}</h1>
+                    </div>
+                    <div class="col-12">
+                        {{app.licencia.descripcion}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row px-3 mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-title">Compañia</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img [src]="app.empresa.img" alt="" width="50px">
+                            </div>
+                            <div class="col-auto">
+                                <h3>{{app.empresa.nombre}}</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <a [href]="app.empresa.web" target="blank" class="btn btn-secondary">WEB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
